@@ -49,7 +49,7 @@ fun main() {
             .thenBy { it.prenume }
     )
 
-    println("\nb1) ORDINE ALFABETICA PE GRUPE:")
+    println("\n ordine alfabetica pe grp")
     alfabetici.forEach { println(it) }
 
 
@@ -57,7 +57,7 @@ fun main() {
         .filter { it.esteIntegralist() }
         .sortedByDescending { it.media() }
 
-    println("\nb2) INTEGRALISTI - MEDIA DESCRESCATOARE:")
+    println("\nintegralisti medii descr")
     integralisti.forEach { println(it) }
 
 
@@ -65,6 +65,6 @@ fun main() {
         .filter { !it.esteIntegralist() }
         .sortedBy { it.numarRestante() }
 
-    println("\nb3) RESTANTIERI - RESTANTE CRESCATOARE:")
+    println("\n restantieri medii cresc")
     restantieri.forEach { println(it) }
 }
